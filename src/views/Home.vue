@@ -15,7 +15,6 @@
         <tr v-for="client in clients" :key="client.id">
           <td>{{client.id}}</td>
           <td>{{client.fullName}}</td>
-          <td><button type="submit" class="btn"><vue-fontawesome icon="pencil" size="1.5" color="blue"></vue-fontawesome></button></td>
           <td><button type="submit" class="btn" @click="deleteClient(client.id)"><vue-fontawesome icon="trash" size="1.5" color="red"></vue-fontawesome></button></td>
         </tr>
       </tbody>
